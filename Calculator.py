@@ -1,10 +1,14 @@
 
 class Calculator:
     def add(self, string):
-        if string =="":
+        if string == "":
             return 0
         elif "," in string:
-            return int(string[0]) + int(string[2])
+            total = 0
+            for i in string:
+                if i != ',':
+                    total += int(i)
+            return total
         else:
             return int(string)
 
