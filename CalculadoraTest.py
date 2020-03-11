@@ -1,6 +1,10 @@
 from unittest import TestCase
-from Calculadora import Calculadora
+from Calculator import Calculator
 
-class CalculadoraTest(TestCase):
-    def test_sumar(self):
-        self.assertEqual(Calculadora().sumar(""),0,"Cadena vacia")
+class CalculatorTest(TestCase):
+    def test_add(self):
+        self.assertEqual(Calculator().add(""),0,"Empty string")
+
+    def test_add_onestring(self):
+        self.assertEqual(Calculator().add("1"),1,"A Number")
+
