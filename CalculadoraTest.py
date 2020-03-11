@@ -19,7 +19,7 @@ class CalculatorTest(TestCase):
         self.assertEqual(Calculator().add("1,3,4"), 8, "Multiple numbers")
 
     def test_add_stringWithManyNumbersAndSeparators(self):
-        self.assertEqual(Calculator().add("1#3/4:4"), 12, "Multiple numbers with different separators")
+        self.assertEqual(Calculator().add("1#3/4:4-1"), 13, "Multiple numbers with different separators")
 
 
 
